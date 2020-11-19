@@ -1,0 +1,30 @@
+
+
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio">
+<TITLE>
+    TITLE
+
+</TITLE>
+</HEAD>
+
+<BODY>
+    <h1>h1 태그입니다</h1>
+    <h2>h2 태그입니다</h2>
+    <h3>h3 태그입니다</h3>
+    <h4>h4 태그입니다</h4>
+    <h5>h5 태그입니다</h5>
+    
+    <p><i>KOREA</i></p>
+    <p>KOREA<sup>seoul</sup></p>
+    <p><ins>KOREA</ins></p>
+    <p><del>DELETE</del></p>
+
+
+</BODY>
+</HTML>
+
+head에는 주로 페이지 설정등
+body에 주 내용
