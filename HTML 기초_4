@@ -1,0 +1,69 @@
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio">
+<TITLE>
+</TITLE>
+    <style>
+        div{
+            background-color:#6d7900; border:5px solid #ff6a00;
+        }
+
+    </style>
+
+    //CSS는 HTML문서를 바탕으로 쓰여지는 것임 기본적으로 html을 기반으로 함
+    //선택자를 지정해줌. 여기서는 div
+    //background-color 는 말그대로 바탕색. #을 하고 색깔을 선택할 수 있다.
+    //border는 테두리
+
+     
+
+</HEAD>
+<BODY>
+
+    <div>
+        <h1>제목입니다.</h1>
+        <p>본문입니다.</p>
+    </div>
+
+
+
+</BODY>
+</HTML>
+
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+
+    <style>
+       header{color:#00ffff;}
+       p{background-color:red;}
+   </style>
+
+    
+    //이런식으로도 할 수 있고..
+
+</HEAD>
+<BODY>
+
+    <header>
+        <h1>HEADER입니다</h1>
+    </header>
+
+    <div>
+        <h1>제목입니다.</h1>
+        <p>본문입니다.</p>
+    </div>
+
+
+
+
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+*{
+color: #ooffff;
+
+}
+
+이렇게 하면 모든 게 태그된다.
+여기서 하나만 다르게 하고싶다, 하면 그걸 이 거 뒤에 위치시키면 된다.
