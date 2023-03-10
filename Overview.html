@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MMORPG Data Management System - Overview</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1><a href="management system.html"><img src="C:\homepage\logo.png" alt ="logo"></h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="Overview.html">Overview</a></li>
+        <li><a href="player.html">Players</a></li>
+        <li><a href="Characters.html">Characters</a></li>
+        <li><a href="Items.html">Items</a></li>
+        <li><a href="#">Quests</a></li>
+        <li><a href="#">Zones</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="erd.html">ERD</a></li>
+      </ul>
+    </nav>
+    <main>
+        <div class="overview-chart">
+          <h3>Number of registered players</h3>
+          <canvas id="player-chart"></canvas>
+        </div>
+      
+        <h2>Welcome to the MMORPG Data Management System</h2>
+        <p>This system allows you to manage player and game data for your MMORPG.</p>
+        <p>You can access in players, characters, items, Quests, Zones, skiils</p>
+        <p>My name is taekang-Yun, computer engineering, Sejong University</p>
+        <h2>Please select a category from the navigation menu to get started.</h2>
+        <div class="center">
+          <img src="C:\homepage\lostark.png" alt="An example image">
+        </div>
+      </main>
+    <footer>
+      <p>© 2023 19011449 Sejong university taekang Yun</p>
+    </footer>
+  </body>
+</html>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  // Create a chart
+  var ctx = document.getElementById('player-chart').getContext('2d');
+  var chart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      datasets: [{
+        label: 'Registered Players',
+        data: [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200],
+        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+        borderColor: 'rgba(255, 99, 132, 1)',
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
