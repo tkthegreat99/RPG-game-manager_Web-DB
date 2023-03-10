@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MMORPG Data Management System - ERD</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+        <h1><a href="management system.html"><img src="C:\homepage\logo.png" alt="로고"></h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="Overview.html">Overview</a></li>
+        <li><a href="player.html">Players</a></li>
+        <li><a href="Characters.html">Characters</a></li>
+        <li><a href="Items.html">Items</a></li>
+        <li><a href="#">Quests</a></li>
+        <li><a href="#">Zones</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="erd.html">ERD</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>You can upload new player or find player here.</h2>
+      <br><br>
+      <h2>Register a new player</h2>
+  <form action="register.php" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+    <label for="confirm-password">Confirm password:</label>
+    <input type="password" id="confirm-password" name="confirm-password" required>
+    <p id="password-error" style="color: red; display: none;">Passwords do not match.</p><br><br>
+    <label for="Country">Country:</label>
+    <select id="Country" name="Country" required>
+      <option value="">Select a Counutry</option>
+      <option value="Korea">Korea</option>
+      <option value="USA">USA</option>
+      <option value="JAPAN">JAPAN</option>
+      <option value="INDIA">INDIA</option>
+    </select><br><br>
+    <input type="submit" value="Register">
+
+    <br><br><br>
+
+    <h2>Find an existing player</h2>
+    <form action="find.php" method="get">
+      <label for="player-name">Player name:</label>
+      <input type="text" id="player-name" name="player-name" required><br><br>
+      <label for="player-email">Player email:</label>
+      <input type="email" id="player-email" name="player-email" required><br><br>
+      <input type="submit" value="Find">
+    </form>
+  </form>
+  
+    <h2>Delete player information</h2>
+    <form action="delete-player.php" method="post">
+      <label for="player-name">Player name:</label>
+      <input type="text" id="player-name" name="player-name" required><br><br>
+      <input type="submit" value="Delete">
+    </form>
+    </main>
+    <footer>
+      <p>© 2023 19011449 Sejong university taekang Yun</p>
+    </footer>
+  </body>
+</html>
+
+
+<script>
+    function validateForm() {
+      var password = document.getElementById("password").value;
+      var confirmPassword = document.getElementById("confirm-password").value;
+      var passwordError = document.getElementById("password-error");
+      
+      if (password !== confirmPassword) {
+        passwordError.style.display = "block";
+        return false;
+      } else {
+        passwordError.style.display = "none";
+        return true;
+      }
+    }
+</script>
