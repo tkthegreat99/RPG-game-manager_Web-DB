@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MMORPG Data Management System</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1><a href="management system.html"><img src="C:\homepage\logo.png" alt ="로고"></h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="Overview.html">Overview</a></li>
+        <li><a href="player.html">Players</a></li>
+        <li><a href="Characters.html">Characters</a></li>
+        <li><a href="#">Items</a></li>
+        <li><a href="#">Quests</a></li>
+        <li><a href="#">Zones</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="erd.html">ERD</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Find an existing character</h2>
+      <form action="find-character.php" method="get">
+        <label for="character-name">Character name:</label>
+        <input type="text" id="character-name" name="character-name" required><br><br>
+        <input type="submit" value="Find">
+      </form>
+      <div id="character-info"></div>
+      <br><br>
+      <h2>Register a new character</h2>
+  <form action="register-character.php" method="post">
+    <label for="character-name">Character name:</label>
+    <input type="text" id="character-name" name="character-name" required><br><br>
+    <label for="character-class">Character class:</label>
+    <select id="character-class" name="character-class" required>
+      <option value="">--Select a class--</option>
+      <option value="Warrior">Warrior</option>
+      <option value="Mage">Mage</option>
+      <option value="Ranger">Ranger</option>
+      <option value="Assassin">Assassin</option>
+    </select><br><br>
+    <label for="character-level">Character level:</label>
+    <input type="number" id="character-level" name="character-level" min="1" max="100" required><br><br>
+    <input type="submit" value="Register">
+  </form>
+    </main>
+    <footer>
+      <p>&copy; 2023 19011449 Sejong university taekang Yun</p>
+    </footer>
+  </body>
+</html>
+
