@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MMORPG Data Management System - Items</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1><a href="management system.html"><img src="C:\homepage\logo.png" alt="로고"></h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="Overview.html">Overview</a></li>
+        <li><a href="player.html">Players</a></li>
+        <li><a href="Characters.html">Characters</a></li>
+        <li><a href="Items.html">Items</a></li>
+        <li><a href="#">Quests</a></li>
+        <li><a href="#">Zones</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="erd.html">ERD</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Find currently registered items</h2>
+      <div class="items-form">
+        <label for="item-list">Select an item:</label>
+        <select id="item-list" name="item-list">
+          <option value="a">a</option>
+          <option value="b">b</option>
+          <option value="c">c</option>
+          <option value="d">d</option>
+          <option value="e">e</option>
+          <option value="f">f</option>
+          <option value="g">g</option>
+        </select>
+      </div>
+      <div class="items-display">
+        <h3>Selected item</h3>
+        <div id="item-image"></div>
+        <p id="item-description"></p>
+      </div>
+      </div>
+      <div class="items-input">
+        <h2>Register new item</h2>
+        <form action="register-item.php" method="post" enctype="multipart/form-data">
+          <label for="item-image-input">Image:</label>
+          <input type="file" id="item-image-input" name="item-image-input" accept="image/png, image/jpeg" required><br><br>
+          <label for="item-description-input">Description:</label>
+          <input type="text" id="item-description-input" name="item-description-input" required><br><br>
+          <label for="item-grade-input">Grade:</label>
+          <select id="item-grade-input" name="item-grade-input" required>
+            <option value="">Select a grade</option>
+            <option value="common">Common</option>
+            <option value="rare">Rare</option>
+            <option value="epic">Epic</option>
+            <option value="legendary">Legendary</option>
+          </select><br><br>
+          <input type="submit" value="Register">
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>© 2023 19011449 Sejong university taekang Yun</p>
+    </footer>
+  </body>
+</html>
+
+<script>
+var itemList = document.getElementById("item-list");
+itemList.addEventListener("change", function() {
+  // get the selected option value
+  var itemValue = this.value;
+  // get the item image element and set the source
+  var itemImage = document.getElementById("item-image");
+  if (itemValue === "a") {
+    itemImage.innerHTML = '<img src="C:\\homepage\\lostark.png" alt="item image">';
+  } else if (itemValue === "b") {
+    itemImage.innerHTML = '<img src="C:\\homepage\\erd.png" alt="item image">';
+  } else if (itemValue === "c") {
+    itemImage.innerHTML = '<img src="C:\\homepage\\logo.png" alt="item image" style="float: left; margin-right: 10px;">';
+  } else {
+    itemImage.innerHTML = '';
+  }
+  // get the item description element and set the text
+  var itemDescription = document.getElementById("item-description");
+  if (itemValue === "a") {
+    itemDescription.textContent = "Equip this item to increase attack power by 10.";
+  } else if (itemValue === "b") {
+    itemDescription.textContent = "Equip this item to increase defense by 5.";
+  } else if (itemValue === "c") {
+    itemDescription.textContent = "The MMORPG Data Management System logo.";
+  } else {
+    itemDescription.textContent = "";
+  }
+});
+</script>
