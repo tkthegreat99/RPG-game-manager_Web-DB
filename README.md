@@ -1,4 +1,4 @@
-# RPG game management Website (
+# RPG game management Website
 
 This Website can manage game's resource, such as players, characters, items, etc.
 I used HTML, CSS, javascript for front
